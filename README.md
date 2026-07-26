@@ -4,9 +4,9 @@ A professional, modern, fully responsive **restaurant website** built as a portf
 project for a Software Engineering student's GitHub and LinkedIn showcase. The site
 is 100% original, production-quality, and ready for GitHub Pages deployment.
 
-> **Live Demo:** _<!-- replace with your GitHub Pages URL -->_ `https://ubaidullahzafar789-cyber.github.io/Restaurant-Website/`
+> **Live Demo:** _<!-- replace with your GitHub Pages URL -->_ `https://ubaidullahzafar789-cyber.github.io/Resturant-Website/`
 >
-> **Repository:** _<!-- replace with your repo URL -->_ `https://github.com/ubaidullahzafar789-cyber/Restaurant-Website`
+> **Repository:** _<!-- replace with your repo URL -->_ `https://github.com/ubaidullahzafar789-cyber/Resturant-Website`
 
 ---
 
