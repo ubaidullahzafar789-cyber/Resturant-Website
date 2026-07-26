@@ -111,16 +111,7 @@ This is a static site — no build step or dependencies required.
 
 ---
 
-## Screenshots
 
-<!-- Add screenshots of each page here once deployed. Recommended: -->
-<!-- ![Home](screenshots/home.png) -->
-<!-- ![About](screenshots/about.png) -->
-<!-- ![Menu](screenshots/menu.png) -->
-<!-- ![Gallery](screenshots/gallery.png) -->
-<!-- ![Contact](screenshots/contact.png) -->
-
-_Screenshots coming soon._
 
 ---
 
