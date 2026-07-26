@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       Saveur — Restaurant Website
+       contact.html — Contact page
+       Form is UI-only (no backend), includes hours, map, socials.
+       ============================================================ -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1c1c1c" />
+
+  <title>Contact &amp; Reservations — Saveur</title>
+  <meta name="description" content="Get in touch with Saveur. Reserve a table, send us a message, find our hours and location, and follow us on social media." />
+  <meta name="keywords" content="contact restaurant, reservations, restaurant hours, restaurant location, saveur contact" />
+  <meta name="author" content="Your Name" />
+
+  <meta property="og:title" content="Contact &amp; Reservations — Saveur" />
+  <meta property="og:description" content="Reserve a table or send us a message. Find our hours and location." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1200" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231c1c1c'/%3E%3Cpath d='M9 22c0-7 5-12 14-13-1 8-6 13-14 13z' fill='%23c9a227'/%3E%3C/svg%3E" />
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ===== Navbar ===== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand navbar-brand-custom" href="index.html">
+          <span class="brand-mark"><i class="bi bi-egg-fried"></i></span>
+          Saveur
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-reserve" href="#reserve">Reserve</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===== Page hero ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow eyebrow-center" style="color: var(--color-accent-soft);">We'd Love to Hear From You</span>
+        <h1>Contact &amp; Reservations</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb breadcrumb-custom">
+            <li class="breadcrumb-item"><a href="index.html" class="link-light text-decoration-none">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contact</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ===== Contact info cards ===== -->
+    <section id="contact-info">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="contact-info-card">
+              <div class="icon-circle"><i class="bi bi-geo-alt-fill"></i></div>
+              <h3 class="h5">Visit Us</h3>
+              <p class="text-muted mb-0">128 Maple Avenue,<br />Old Town District,<br />Springfield</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+            <div class="contact-info-card">
+              <div class="icon-circle"><i class="bi bi-telephone-fill"></i></div>
+              <h3 class="h5">Call Us</h3>
+              <p class="text-muted mb-0">
+                <a href="tel:+15551234567" class="link-underline">+1 (555) 123-4567</a><br />
+                Reservations welcome
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+            <div class="contact-info-card">
+              <div class="icon-circle"><i class="bi bi-envelope-fill"></i></div>
+              <h3 class="h5">Email Us</h3>
+              <p class="text-muted mb-0">
+                <a href="mailto:hello@saveur.example" class="link-underline">hello@saveur.example</a><br />
+                We reply within a day
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-3">
+            <div class="contact-info-card">
+              <div class="icon-circle"><i class="bi bi-clock-fill"></i></div>
+              <h3 class="h5">Open Today</h3>
+              <p class="text-muted mb-0">11:00am – 10:00pm<br />Kitchen closes 9:30pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Reservation / contact form + hours ===== -->
+    <section id="reserve" class="bg-cream-dark">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <!-- Form column -->
+          <div class="col-lg-8 reveal">
+            <div class="contact-form-wrap">
+              <span class="eyebrow">Reserve a Table</span>
+              <h2 class="section-title" style="font-size: 2rem;">Book Your Experience</h2>
+              <p class="text-muted mb-4">
+                Fill in the details below and our team will confirm your reservation by
+                phone or email. This form is for demonstration purposes only.
+              </p>
+
+              <!-- UI-only form. No backend wired up.
+                   Uses Bootstrap form classes + validation styling. -->
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="Jordan" required />
+                  <div class="invalid-feedback">Please enter your first name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Ellis" required />
+                  <div class="invalid-feedback">Please enter your last name.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com" required />
+                  <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="+1 (555) 000-0000" required />
+                  <div class="invalid-feedback">Please enter your phone number.</div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="date" class="form-label">Date</label>
+                  <input type="date" class="form-control" id="date" required />
+                  <div class="invalid-feedback">Please choose a date.</div>
+                </div>
+                <div class="col-md-4">
+                  <label for="time" class="form-label">Time</label>
+                  <select class="form-select" id="time" required>
+                    <option value="" selected disabled>Select…</option>
+                    <option>5:00 PM</option>
+                    <option>5:30 PM</option>
+                    <option>6:00 PM</option>
+                    <option>6:30 PM</option>
+                    <option>7:00 PM</option>
+                    <option>7:30 PM</option>
+                    <option>8:00 PM</option>
+                    <option>8:30 PM</option>
+                    <option>9:00 PM</option>
+                  </select>
+                  <div class="invalid-feedback">Please choose a time.</div>
+                </div>
+                <div class="col-md-4">
+                  <label for="guests" class="form-label">Guests</label>
+                  <select class="form-select" id="guests" required>
+                    <option value="" selected disabled>Select…</option>
+                    <option>1 person</option>
+                    <option>2 people</option>
+                    <option>3 people</option>
+                    <option>4 people</option>
+                    <option>5 people</option>
+                    <option>6+ (large party)</option>
+                  </select>
+                  <div class="invalid-feedback">Please select party size.</div>
+                </div>
+
+                <div class="col-12">
+                  <label for="message" class="form-label">Special requests <span class="text-muted fw-normal">(optional)</span></label>
+                  <textarea class="form-control" id="message" rows="3" placeholder="Dietary needs, seating preferences, occasion…"></textarea>
+                </div>
+
+                <div class="col-12 d-flex flex-wrap gap-3 align-items-center mt-3">
+                  <button class="btn btn-accent" type="submit">Request Reservation</button>
+                  <span class="text-muted small">We'll confirm within a few hours.</span>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Hours + socials column -->
+          <div class="col-lg-4 reveal reveal-delay-1">
+            <div class="contact-form-wrap h-100 d-flex flex-column">
+              <span class="eyebrow">Plan Your Visit</span>
+              <h2 class="h4 mb-3">Business Hours</h2>
+              <ul class="hours-list mb-4">
+                <li><span class="day">Monday</span><span class="time">11am – 10pm</span></li>
+                <li><span class="day">Tuesday</span><span class="time">11am – 10pm</span></li>
+                <li><span class="day">Wednesday</span><span class="time">11am – 10pm</span></li>
+                <li><span class="day">Thursday</span><span class="time">11am – 10pm</span></li>
+                <li><span class="day">Friday</span><span class="time">11am – 12am</span></li>
+                <li><span class="day">Saturday</span><span class="time">11am – 12am</span></li>
+                <li><span class="day">Sunday</span><span class="time">10am – 9pm</span></li>
+              </ul>
+
+              <h3 class="h5 mb-3">Follow Saveur</h3>
+              <div class="social-icons" style="margin-top:0;">
+                <a href="#" aria-label="Saveur on Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="Saveur on Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" aria-label="Saveur on X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" aria-label="Saveur on YouTube"><i class="bi bi-youtube"></i></a>
+              </div>
+
+              <div class="mt-auto pt-4">
+                <div class="alert" style="background: var(--color-cream-dark); border:none; border-radius: var(--radius);">
+                  <i class="bi bi-info-circle-fill me-2" style="color: var(--color-accent-dark);"></i>
+                  <span class="small">Large parties of 8 or more, please call us directly for the best experience.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Map ===== -->
+    <section id="map">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="eyebrow eyebrow-center">Find Us</span>
+          <h2 class="section-title">How to Get Here</h2>
+          <p class="section-subtitle">We're in the heart of the Old Town District — easy to reach by car or transit.</p>
+        </div>
+
+        <div class="map-wrap">
+          <!-- Embedded map (placeholder using OpenStreetMap, free to use).
+               Replace src with your restaurant's actual location embed. -->
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.13%2C51.5%2C-0.1%2C51.52&layer=mapnik"
+            title="Map showing Saveur restaurant location"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand mb-3">
+            <span class="brand-mark"><i class="bi bi-egg-fried"></i></span> Saveur
+          </div>
+          <p>A fine dining experience rooted in seasonal ingredients, time-honored technique, and genuine hospitality. Serving our community since 2009.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Saveur on Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Saveur on Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Saveur on X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="Saveur on YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Hours</h5>
+          <ul class="footer-contact">
+            <li><i class="bi bi-clock"></i><span>Mon–Thu: 11am – 10pm</span></li>
+            <li><i class="bi bi-clock"></i><span>Fri–Sat: 11am – 12am</span></li>
+            <li><i class="bi bi-clock"></i><span>Sunday: 10am – 9pm</span></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Reach Us</h5>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt"></i><span>128 Maple Avenue, Old Town District, Springfield</span></li>
+            <li><i class="bi bi-telephone"></i><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+            <li><i class="bi bi-envelope"></i><a href="mailto:hello@saveur.example">hello@saveur.example</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 text-center text-md-start">
+        <span>© <span id="year">2026</span> Saveur Restaurant. All rights reserved.</span>
+        <span>Designed &amp; built with care for a portfolio project.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#main" class="back-to-top" aria-label="Back to top" id="backToTop">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    const navbar = document.querySelector('.navbar-custom');
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+      backToTop.classList.toggle('show', window.scrollY > 400);
+    }, { passive: true });
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Bootstrap client-side validation (UI feedback only — no submission)
+    const form = document.querySelector('.needs-validation');
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+      form.classList.add('was-validated');
+    }, false);
+  </script>
+</body>
+</html>

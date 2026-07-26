@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       Saveur — Restaurant Website
+       index.html — Home page
+       Author: [Your Name]
+       Built with: HTML5, CSS3, Bootstrap 5, Bootstrap Icons,
+                   Google Fonts. No custom JS beyond Bootstrap's bundle.
+       ============================================================ -->
+
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1c1c1c" />
+
+  <title>Saveur — Fine Dining Restaurant | Reservations & Menu</title>
+  <meta name="description" content="Saveur is an award-winning fine dining restaurant serving seasonal, locally sourced cuisine. Reserve a table, explore our menu, and experience unforgettable flavor." />
+  <meta name="keywords" content="restaurant, fine dining, reservations, menu, seasonal cuisine, saveur" />
+  <meta name="author" content="Your Name" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:title" content="Saveur — Fine Dining Restaurant" />
+  <meta property="og:description" content="Seasonal, locally sourced cuisine in an elegant setting. Reserve your table at Saveur." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1200" />
+
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous" />
+
+  <!-- Bootstrap Icons -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    rel="stylesheet" />
+
+  <!-- Google Fonts: Playfair Display (headings) + Poppins (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet" />
+
+  <!-- Favicon (inline SVG leaf mark) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231c1c1c'/%3E%3Cpath d='M9 22c0-7 5-12 14-13-1 8-6 13-14 13z' fill='%23c9a227'/%3E%3C/svg%3E" />
+</head>
+
+<body>
+  <!-- Skip link for keyboard users -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================================
+       Navbar (sticky, responsive, shared across pages)
+       ======================================================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" aria-label="Main navigation">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand navbar-brand-custom" href="index.html">
+          <span class="brand-mark"><i class="bi bi-egg-fried"></i></span>
+          Saveur
+        </a>
+
+        <!-- Mobile toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-reserve" href="contact.html#reserve">Reserve</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ========================================================
+         Hero Banner
+         ======================================================== -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <span class="eyebrow">Est. 2009 · Fine Dining</span>
+            <h1>A Taste of <span style="color: var(--color-accent);">Tradition</span>,<br />Crafted for Today</h1>
+            <p class="lead">
+              Seasonal ingredients, time-honored techniques, and a warm atmosphere —
+              Saveur is where every meal becomes a memory.
+            </p>
+            <div class="hero-actions d-flex flex-wrap gap-3">
+              <a href="menu.html" class="btn btn-accent">Explore the Menu</a>
+              <a href="contact.html#reserve" class="btn btn-outline-light-gold">Book a Table</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll cue -->
+      <a href="#welcome" class="scroll-cue" aria-label="Scroll to content">
+        <i class="bi bi-chevron-double-down"></i>
+      </a>
+    </section>
+
+    <!-- ========================================================
+         Welcome / Intro section
+         ======================================================== -->
+    <section id="welcome">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal">
+            <div class="welcome-img-wrap">
+              <img
+                src="https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="Chef plating a gourmet dish in the Saveur kitchen"
+                loading="lazy" width="900" height="600" />
+              <div class="experience-badge" aria-hidden="true">
+                <span class="big">15+</span>
+                <span class="small">Years of<br />Excellence</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal reveal-delay-1">
+            <span class="eyebrow">Welcome to Saveur</span>
+            <h2 class="section-title">Where Every Dish Tells a Story</h2>
+            <p class="text-muted mb-3">
+              Born from a love of honest cooking and bold flavors, Saveur has spent over a
+              decade perfecting the art of fine dining. Our chefs hand-pick ingredients from
+              local farms each morning, turning them into plates that surprise and delight.
+            </p>
+            <p class="text-muted mb-4">
+              Whether you're celebrating a special occasion or simply savoring a quiet evening,
+              our team is devoted to making every moment at the table feel extraordinary.
+            </p>
+
+            <!-- Mini feature list -->
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: var(--color-accent);"></i> Seasonal menus crafted from local produce</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: var(--color-accent);"></i> Award-winning culinary team</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: var(--color-accent);"></i> Intimate, elegantly designed dining room</li>
+            </ul>
+
+            <a href="about.html" class="link-underline">Discover our story <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Spacer so the floating badge never overlaps the next section -->
+      <div style="height: 40px;" aria-hidden="true"></div>
+    </section>
+
+    <!-- ========================================================
+         Featured Dishes
+         ======================================================== -->
+    <section id="featured" class="bg-cream-dark">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="eyebrow eyebrow-center">Chef's Selection</span>
+          <h2 class="section-title">Featured Dishes</h2>
+          <div class="ornament"><i class="bi bi-asterisk"></i></div>
+          <p class="section-subtitle">
+            A rotating showcase of the dishes our guests love most — each one a
+            celebration of flavor, texture, and craftsmanship.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Dish 1 -->
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="dish-card">
+              <div class="dish-img">
+                <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=800"
+                     alt="Pan-seared salmon with herb sauce" loading="lazy" width="800" height="600" />
+                <span class="dish-price">$28</span>
+              </div>
+              <div class="dish-body">
+                <span class="dish-tag">Mains</span>
+                <h3>Seared Atlantic Salmon</h3>
+                <p>Crispy-skinned salmon, saffron beurre blanc, charred asparagus and dill oil.</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Dish 2 -->
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+            <article class="dish-card">
+              <div class="dish-img">
+                <img src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=800"
+                     alt="Handmade pasta with tomato and basil" loading="lazy" width="800" height="600" />
+                <span class="dish-price">$22</span>
+              </div>
+              <div class="dish-body">
+                <span class="dish-tag">Pasta</span>
+                <h3>Tagliatelle al Pomodoro</h3>
+                <p>Slow-simmered San Marzano sauce, fresh basil, shaved Parmigiano and olive oil.</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Dish 3 -->
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+            <article class="dish-card">
+              <div class="dish-img">
+                <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800"
+                     alt="Assorted Mediterranean appetizer platter" loading="lazy" width="800" height="600" />
+                <span class="dish-price">$18</span>
+              </div>
+              <div class="dish-body">
+                <span class="dish-tag">Starters</span>
+                <h3>Mediterranean Mezze</h3>
+                <p>Warm pita, hummus, baba ganoush, marinated olives and whipped feta dip.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="menu.html" class="btn btn-outline-dark">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         Why Choose Us
+         ======================================================== -->
+    <section id="why-us">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="eyebrow eyebrow-center">Why Saveur</span>
+          <h2 class="section-title">A Dining Experience Like No Other</h2>
+          <p class="section-subtitle">
+            We obsess over the details so you can focus on the moments that matter.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="feature-card">
+              <div class="icon-circle"><i class="bi bi-award"></i></div>
+              <h3 class="h5">Award-Winning Cuisine</h3>
+              <p class="text-muted mb-0">Recognized by regional culinary guides for consistency and creativity.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+            <div class="feature-card">
+              <div class="icon-circle"><i class="bi bi-basket"></i></div>
+              <h3 class="h5">Farm-Fresh Ingredients</h3>
+              <p class="text-muted mb-0">Sourced daily from trusted local farms and sustainable suppliers.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+            <div class="feature-card">
+              <div class="icon-circle"><i class="bi bi-people"></i></div>
+              <h3 class="h5">Attentive Service</h3>
+              <p class="text-muted mb-0">A warm, knowledgeable team dedicated to your comfort.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-3">
+            <div class="feature-card">
+              <div class="icon-circle"><i class="bi bi-cup-hot"></i></div>
+              <h3 class="h5">Cozy Ambiance</h3>
+              <p class="text-muted mb-0">Soft lighting, curated playlists, and an intimate dining room.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         Customer Testimonials
+         ======================================================== -->
+    <section id="testimonials" class="bg-cream-dark">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="eyebrow eyebrow-center">Guest Love</span>
+          <h2 class="section-title">What Our Guests Say</h2>
+          <div class="ornament"><i class="bi bi-quote"></i></div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Testimonial 1 -->
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="testimonial-card">
+              <span class="quote-mark">“</span>
+              <div class="stars mb-2" aria-label="5 out of 5 stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>“An anniversary dinner we'll never forget. Every course was a work of art, and the service made us feel like family.”</p>
+              <div class="person">
+                <img src="https://images.pexels.com/photos/3771819/pexels-photo-3771819.jpeg?auto=compress&cs=tinysrgb&w=120"
+                     alt="Portrait of Emily Carter" loading="lazy" width="52" height="52" />
+                <div>
+                  <div class="name">Emily Carter</div>
+                  <div class="role">Food Blogger</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+            <article class="testimonial-card">
+              <span class="quote-mark">“</span>
+              <div class="stars mb-2" aria-label="5 out of 5 stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>“The salmon is the best I've had outside of Norway. Saveur has become our go-to for client dinners.”</p>
+              <div class="person">
+                <img src="https://images.pexels.com/photos/5490186/pexels-photo-5490186.jpeg?auto=compress&cs=tinysrgb&w=120"
+                     alt="Portrait of Marcus Reid" loading="lazy" width="52" height="52" />
+                <div>
+                  <div class="name">Marcus Reid</div>
+                  <div class="role">Regular Guest</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+            <article class="testimonial-card">
+              <span class="quote-mark">“</span>
+              <div class="stars mb-2" aria-label="5 out of 5 stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>“From the mezze to the dessert, a flawless evening. The ambiance is elegant without being stuffy.”</p>
+              <div class="person">
+                <img src="https://images.pexels.com/photos/2698998/pexels-photo-2698998.jpeg?auto=compress&cs=tinysrgb&w=120"
+                     alt="Portrait of Priya Nair" loading="lazy" width="52" height="52" />
+                <div>
+                  <div class="name">Priya Nair</div>
+                  <div class="role">Travel Writer</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         Reservation CTA band
+         ======================================================== -->
+    <section id="reserve-cta" class="reservation-cta">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <span class="eyebrow eyebrow-center" style="color: var(--color-accent-soft);">Reservations Open</span>
+            <h2 class="section-title">Ready for an Unforgettable Evening?</h2>
+            <p class="section-subtitle text-white-50">
+              Reserve your table today and let us take care of the rest. Walk-ins welcome,
+              but booking ahead guarantees your spot.
+            </p>
+            <a href="contact.html#reserve" class="btn btn-accent mt-2">Book a Table Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         Newsletter
+         ======================================================== -->
+    <section id="newsletter" class="newsletter">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-7">
+            <span class="eyebrow eyebrow-center" style="color: var(--color-accent-soft);">Stay in the Loop</span>
+            <h2 class="section-title">Join Our Table Insider List</h2>
+            <p class="section-subtitle text-white-50">
+              Seasonal menu launches, private events, and exclusive tasting nights —
+              delivered to your inbox once a month.
+            </p>
+
+            <!-- Newsletter form (UI only — no backend) -->
+            <form class="newsletter-form mt-4" aria-label="Newsletter signup">
+              <div class="input-group input-group-lg">
+                <label for="newsletterEmail" class="visually-hidden">Email address</label>
+                <input
+                  type="email"
+                  id="newsletterEmail"
+                  class="form-control"
+                  placeholder="Your email address"
+                  required />
+                <button class="btn btn-accent" type="submit">Subscribe</button>
+              </div>
+              <p class="mt-3 mb-0" style="color: rgba(255,255,255,0.55); font-size: 0.85rem;">
+                We respect your privacy. Unsubscribe anytime.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       Footer (shared across pages)
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Brand + about blurb -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand mb-3">
+            <span class="brand-mark"><i class="bi bi-egg-fried"></i></span> Saveur
+          </div>
+          <p>
+            A fine dining experience rooted in seasonal ingredients, time-honored
+            technique, and genuine hospitality. Serving our community since 2009.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Saveur on Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Saveur on Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Saveur on X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="Saveur on YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Hours -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Hours</h5>
+          <ul class="footer-contact">
+            <li><i class="bi bi-clock"></i><span>Mon–Thu: 11am – 10pm</span></li>
+            <li><i class="bi bi-clock"></i><span>Fri–Sat: 11am – 12am</span></li>
+            <li><i class="bi bi-clock"></i><span>Sunday: 10am – 9pm</span></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Reach Us</h5>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt"></i><span>128 Maple Avenue, Old Town District, Springfield</span></li>
+            <li><i class="bi bi-telephone"></i><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+            <li><i class="bi bi-envelope"></i><a href="mailto:hello@saveur.example">hello@saveur.example</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 text-center text-md-start">
+        <span>© <span id="year">2026</span> Saveur Restaurant. All rights reserved.</span>
+        <span>Designed &amp; built with care for a portfolio project.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#home" class="back-to-top" aria-label="Back to top" id="backToTop">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <!-- ========================================================
+       Scripts
+       ======================================================== -->
+
+  <!-- Bootstrap 5 JS Bundle (required for navbar toggle, etc.) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- Tiny enhancement: navbar shadow on scroll + back-to-top + auto year -->
+  <script>
+    // Navbar becomes more opaque after scrolling down
+    const navbar = document.querySelector('.navbar-custom');
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY > 40;
+      navbar.classList.toggle('scrolled', scrolled);
+      backToTop.classList.toggle('show', window.scrollY > 400);
+    }, { passive: true });
+
+    // Auto-fill current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

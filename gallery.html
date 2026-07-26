@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       Saveur — Restaurant Website
+       gallery.html — Gallery page
+       Responsive image grid with hover overlays.
+       ============================================================ -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1c1c1c" />
+
+  <title>Gallery — Saveur | Food, Interior & Kitchen Moments</title>
+  <meta name="description" content="Browse the Saveur gallery — plated dishes, our dining room, the kitchen in action, and our chefs at work." />
+  <meta name="keywords" content="restaurant gallery, food photography, restaurant interior, kitchen, chef" />
+  <meta name="author" content="Your Name" />
+
+  <meta property="og:title" content="Saveur Gallery — Moments From Our Kitchen" />
+  <meta property="og:description" content="A visual tour of our dishes, dining room, and kitchen." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1200" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231c1c1c'/%3E%3Cpath d='M9 22c0-7 5-12 14-13-1 8-6 13-14 13z' fill='%23c9a227'/%3E%3C/svg%3E" />
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ===== Navbar ===== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand navbar-brand-custom" href="index.html">
+          <span class="brand-mark"><i class="bi bi-egg-fried"></i></span>
+          Saveur
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-reserve" href="contact.html#reserve">Reserve</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===== Page hero ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow eyebrow-center" style="color: var(--color-accent-soft);">A Feast for the Eyes</span>
+        <h1>Gallery</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb breadcrumb-custom">
+            <li class="breadcrumb-item"><a href="index.html" class="link-light text-decoration-none">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ===== Gallery grid ===== -->
+    <section id="gallery">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-subtitle">
+            A look inside Saveur — the plates we're proud of, the rooms we've built,
+            and the people who make it all happen.
+          </p>
+        </div>
+
+        <!-- Masonry-style responsive grid using Bootstrap columns.
+             Some items use the "tall" modifier for visual rhythm. -->
+        <div class="row g-3 gallery-grid">
+
+          <!-- Food: signature salmon -->
+          <div class="col-md-6 col-lg-4">
+            <figure class="gallery-item tall">
+              <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   alt="Pan-seared salmon plated with asparagus and sauce" loading="lazy" width="800" height="800" />
+              <figcaption class="caption">
+                <span>Food</span>
+                <h4>Seared Atlantic Salmon</h4>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Interior: dining room -->
+          <div class="col-md-6 col-lg-4">
+            <figure class="gallery-item">
+              <img src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   alt="Elegant restaurant dining room with warm lighting" loading="lazy" width="800" height="600" />
+              <figcaption class="caption">
+                <span>Interior</span>
+                <h4>The Main Dining Room</h4>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Food: pasta -->
+          <div class="col-md-6 col-lg-4">
+            <figure class="gallery-item">
+              <img src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   alt="Freshly plated tagliatelle with herbs" loading="lazy" width="800" height="600" />
+              <figcaption class="caption">
+                <span>Food</span>
+                <h4>Tagliatelle al Pomodoro</h4>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Kitchen: action shot -->
+          <div class="col-md-6 col-lg-4">
+            <figure class="gallery-item">
+              <img src="https://images.pexels.com/photos/1267319/pexels-photo-1267319.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   alt="Chef plating a dish in a busy kitchen" loading="lazy" width="800" height="600" />
+              <figcaption class="caption">
+                <span>Kitchen</span>
+                <h4>In the Weeds, On the Pass</h4>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Food: dessert -->
+          <div class="col-md-6 col-lg-4">
+            <figure class="gallery-item tall">
+              <img src="https://images.pexels.com/photos/2144112/pexels-photo-2144112.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   alt="Molten chocolate lava cake with ice cream" loading="lazy" width="800" height="800" />
+              <figcaption class="caption">
+                <span>Dessert</span>
+                <h4>Molten Chocolate Lava Cake</h4>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Interior: bar -->
+          <div class="col-md-6 col-lg-4">
+            <figure class="gallery-item">
+              <img src="https://images.pexels.com/photos/2664217/pexels-photo-2664217.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   alt="Restaurant bar area with bottles and glassware" loading="lazy" width="800" height="600" />
+              <figcaption class="caption">
+                <span>Interior</span>
+                <h4>The Cocktail Bar</h4>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Chef at work: portrait -->
+          <div class="col-md-6 col-lg-4">
+            <figure class="gallery-item">
+              <img src="https://images.pexels.com/photos/3784067/pexels-photo-3784067.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   alt="Pastry chef decorating a dessert" loading="lazy" width="800" height="600" />
+              <figcaption class="caption">
+                <span>Chef at Work</span>
+                <h4>Plating with Precision</h4>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Food: ribeye -->
+          <div class="col-md-6 col-lg-4">
+            <figure class="gallery-item">
+              <img src="https://images.pexels.com/photos/675951/pexels-photo-675951.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   alt="Herb-crusted ribeye steak with herb butter" loading="lazy" width="800" height="600" />
+              <figcaption class="caption">
+                <span>Food</span>
+                <h4>Herb-Crusted Ribeye</h4>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Interior: table setting -->
+          <div class="col-md-6 col-lg-4">
+            <figure class="gallery-item tall">
+              <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   alt="Beautifully set dinner table with candles" loading="lazy" width="800" height="800" />
+              <figcaption class="caption">
+                <span>Dining Area</span>
+                <h4>Set for the Evening</h4>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Food: salad -->
+          <div class="col-md-6 col-lg-4">
+            <figure class="gallery-item">
+              <img src="https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   alt="Fresh heirloom tomato and burrata salad" loading="lazy" width="800" height="600" />
+              <figcaption class="caption">
+                <span>Food</span>
+                <h4>Heirloom &amp; Burrata</h4>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Kitchen: cooking flames -->
+          <div class="col-md-6 col-lg-4">
+            <figure class="gallery-item">
+              <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   alt="Chef cooking with flames in the kitchen" loading="lazy" width="800" height="600" />
+              <figcaption class="caption">
+                <span>Kitchen</span>
+                <h4>Fire on the Line</h4>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Drinks: cocktail -->
+          <div class="col-md-6 col-lg-4">
+            <figure class="gallery-item">
+              <img src="https://images.pexels.com/photos/884600/pexels-photo-884600.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   alt="Espresso martini cocktail with coffee beans" loading="lazy" width="800" height="600" />
+              <figcaption class="caption">
+                <span>Drinks</span>
+                <h4>Espresso Martini</h4>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section id="reserve-cta" class="reservation-cta">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <h2 class="section-title">Prefer the Real Thing?</h2>
+            <p class="section-subtitle text-white-50">Pictures only go so far. Come taste it for yourself.</p>
+            <a href="contact.html#reserve" class="btn btn-accent mt-2">Reserve a Table</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand mb-3">
+            <span class="brand-mark"><i class="bi bi-egg-fried"></i></span> Saveur
+          </div>
+          <p>A fine dining experience rooted in seasonal ingredients, time-honored technique, and genuine hospitality. Serving our community since 2009.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Saveur on Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Saveur on Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Saveur on X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="Saveur on YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Hours</h5>
+          <ul class="footer-contact">
+            <li><i class="bi bi-clock"></i><span>Mon–Thu: 11am – 10pm</span></li>
+            <li><i class="bi bi-clock"></i><span>Fri–Sat: 11am – 12am</span></li>
+            <li><i class="bi bi-clock"></i><span>Sunday: 10am – 9pm</span></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Reach Us</h5>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt"></i><span>128 Maple Avenue, Old Town District, Springfield</span></li>
+            <li><i class="bi bi-telephone"></i><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+            <li><i class="bi bi-envelope"></i><a href="mailto:hello@saveur.example">hello@saveur.example</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 text-center text-md-start">
+        <span>© <span id="year">2026</span> Saveur Restaurant. All rights reserved.</span>
+        <span>Designed &amp; built with care for a portfolio project.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#main" class="back-to-top" aria-label="Back to top" id="backToTop">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    const navbar = document.querySelector('.navbar-custom');
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+      backToTop.classList.toggle('show', window.scrollY > 400);
+    }, { passive: true });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
