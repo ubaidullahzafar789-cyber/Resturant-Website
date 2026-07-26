@@ -180,8 +180,8 @@ See **[IMAGES.md](IMAGES.md)** for the full image list, source links, and credit
 ## Author
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [Your Name](https://www.linkedin.com/in/your-profile)
+- GitHub: https://github.com/ubaidullahzafar789-cyber
+- LinkedIn: https://www.linkedin.com/in/ubaidullahzafar789/
 
 _Built as a portfolio project to demonstrate frontend development skills._
 
