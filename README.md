@@ -129,7 +129,7 @@ _Screenshots coming soon._
 Once deployed to GitHub Pages, your live site will be available at:
 
 ```
-https://<your-username>.github.io/restaurant-website/
+https://ubaidullahzafar789-cyber.github.io/Resturant-Website/
 ```
 
 ---
