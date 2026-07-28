@@ -96,8 +96,9 @@ restaurant-website/
 This is a static site — no build step or dependencies required.
 
 1. **Download / clone the repository:**
-   ```bash
-  https://github.com/ubaidullahzafar789-cyber/Resturant-Website
+   ```
+   bash
+ git clone https://github.com/ubaidullahzafar789-cyber/Resturant-Website
    cd restaurant-website
    ```
 2. **Open `index.html`** in your browser — that's it.
